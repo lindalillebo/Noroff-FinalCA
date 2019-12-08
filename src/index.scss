@@ -1,0 +1,55 @@
+$font-stack: sans-serif;
+$primary-color: #468065;
+$font-color: #333;
+$hover-color: #2d5240;
+
+* {    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-stack;
+    color: $font-color;
+    height: 100%;
+}
+
+header {
+    background-color: $primary-color;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    h1 {
+        padding-right: 60px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        overflow: hidden;
+        li{
+            padding-right: 20px;
+            a:hover {
+                color: #bbb;
+            }
+        }
+    }
+}
+
+button {
+    float: right;
+    margin: 20px 2px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: $primary-color;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+button:hover {
+    background-color: $hover-color;
+}

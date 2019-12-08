@@ -1,0 +1,33 @@
+$error-color: #f00808;
+$border-color: #868686;
+
+.form-container {
+    margin: 60px auto 0;
+    width: 450px;
+    height: 100%;
+    border: 1px solid $border-color;
+    padding: 40px 30px 80px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    p {
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+    form {
+        margin-top: 10px;
+        label {
+            float: left;
+            padding: 30px 0 20px;
+        }
+        input {
+            display: block;
+            width: 92%;
+            padding: 15px;
+        }
+        p {
+            color: $error-color;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+    }
+}
