@@ -10,6 +10,7 @@
     "react-hook-form": "^3.28.13",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
+    "react-use-localstorage": "^3.4.1",
     "sass": "^1.23.7",
     "yup": "^0.27.0"
   },

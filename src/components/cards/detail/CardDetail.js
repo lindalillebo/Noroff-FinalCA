@@ -20,4 +20,4 @@ export default function CardDetail({ details }) {
 
 CardDetail.propTypes = {
     details: PropTypes.object.isRequired
-};
+}; 

@@ -8,7 +8,7 @@ export default function Contact() {
         lname: yup.string().required("Last name is required"),
         phone: yup
                .string()
-               .matches(/^\d{3}[-\s\.]\d{3}[-\s\.]\d{4}$/, "Valid phone number is required"),
+               .matches(/^\d{3}[-\s.]\d{3}[-\s.]\d{4}$/, "Valid phone number is required"),
         email: yup
                .string()
                .email("Please enter a valid email")

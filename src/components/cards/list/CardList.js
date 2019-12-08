@@ -6,7 +6,6 @@ import CardItem from "./CardItem";
 import Search from "./Search";
 
 export default function CardList() {
-
     const [cards, setCards] = useState([]);
     const [filteredCards, setFilteredCards] = useState([]);
 
@@ -17,7 +16,7 @@ export default function CardList() {
             .then(response => response.json())
             .then(json => {
                 setCards(json.cards);
-                setFilteredCards(json.cards);
+                // setFilteredCards(json.cards);
             })
             .catch(error => console.error(error));
     }, []);

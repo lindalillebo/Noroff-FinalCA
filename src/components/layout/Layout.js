@@ -5,23 +5,23 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Login from "../login/Login";
 import Home from "../home/Home";
 import About from "../about/About";
 import Contact from "../contact/Contact";
 import CardDetail from "../cards/detail/CardDetail";
-// import "./Layout.scss";
 
 export default function Layout() {
   return (
     <Router>
       <header>
-        <Link to="/home/" className="nav-link">
+        <Link to="/" className="nav-link">
           <h1>Card Game</h1>
         </Link>
         <nav>
           <ul>
             <li>
-              <Link to="/home/" className="nav-link">
+              <Link to="/home" className="nav-link">
                 Home
               </Link>
             </li>
@@ -40,6 +40,7 @@ export default function Layout() {
       </header>
       <div>
         <Switch>
+          <Route path="/" exact component={Login} />
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
