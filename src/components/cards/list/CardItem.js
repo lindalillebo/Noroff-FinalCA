@@ -6,13 +6,11 @@ export default function CardItem({ id, name, imageUrl }) {
   const history = useHistory();
 
   return (
-    <>
-      <div className="card-container__elem">
-        <h3>{name}</h3>
-        <img alt={name} src={imageUrl} />
-        <button onClick={() => history.push(`/card/${id}`)}>View more</button>
-      </div>
-    </>
+    <div className="card-container__elem">
+      <h3>{name}</h3>
+      <img alt={name} src={imageUrl} />
+      <button onClick={() => history.push(`/card/${id}`)}>View more</button>
+    </div>
   );
 }
 

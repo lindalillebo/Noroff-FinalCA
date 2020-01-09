@@ -1,16 +1,34 @@
 .detail-container {
-    width: 90%;
-    margin: 50px auto 0;
-    max-width: 1200px;
-    display: flex;
-    .detail-container__items {
-        padding-left: 50px;
-        h2 {
-            padding-bottom: 30px;
-        }
-        p {
-            padding-bottom: 15px;
-            line-height: 25px;
+    margin: 50px 0;
+    display: block;
+
+    .detail-container__image {
+        text-align: center;
+    }
+
+    h2 {
+        padding: 30px 0;
+    }
+
+    p {
+        padding-bottom: 15px;
+        line-height: 25px;
+    }
+}
+
+// Desktop styles
+
+@media (min-width: 710px) {
+
+    .detail-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .detail-container__items {
+            padding-left: 50px;
+            width: 50%;
         }
     }
+    
 }

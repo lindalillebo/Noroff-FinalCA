@@ -29,21 +29,23 @@ export default function CardDetail() {
   }, [id]);
 
   return (
-    <div className="detail-container">
-      <div className="detail-container__image">
-        <img alt={detail.name} src={detail.imageUrl} />
-      </div>
-      <div className="detail-container__items">
-        <h2>{detail.name}</h2>
-        <p>
-          <b>About:</b> {detail.text}
-        </p>
-        <p>
-          <b>Rarity:</b> {detail.rarity}
-        </p>
-        <p>
-          <b>Colors:</b> {detail.colors}
-        </p>
+    <div className="wrapper">
+      <div className="detail-container">
+        <div className="detail-container__image">
+          <img alt={detail.name} src={detail.imageUrl} />
+        </div>
+        <div className="detail-container__items">
+          <h2>{detail.name}</h2>
+          <p>
+            <b>About:</b> {detail.text}
+          </p>
+          <p>
+            <b>Rarity:</b> {detail.rarity}
+          </p>
+          <p>
+            <b>Colors:</b> {detail.colors}
+          </p>
+        </div>
       </div>
     </div>
   );

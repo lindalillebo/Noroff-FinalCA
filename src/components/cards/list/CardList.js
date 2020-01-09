@@ -34,13 +34,17 @@ export default function CardList() {
   };
 
   return (
-    <div className="cardList-container">
-      <Search handleSearch={filterCards} />
-      <div className="card-container">
-        {filteredCards.map(c => {
-          const { id, name, imageUrl } = c;
-          return <CardItem key={id} id={id} name={name} imageUrl={imageUrl} />;
-        })}
+    <div className="wrapper">
+      <div className="cardList-container">
+        <Search handleSearch={filterCards} />
+        <div className="card-container">
+          {filteredCards.map(c => {
+            const { id, name, imageUrl } = c;
+            return (
+              <CardItem key={id} id={id} name={name} imageUrl={imageUrl} />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

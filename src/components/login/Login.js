@@ -37,34 +37,38 @@ export default function Login() {
   }
 
   return (
-    <div className="form-container">
-      <h2>Login to view card game</h2>
-      <p>username: user <br /> password: password</p>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="username">
-          <b>Username</b>
-        </label>
-        <input
-          type="text"
-          name="username"
-          placeholder="Enter username"
-          ref={register({ required: true })}
-        />
-        {errors.username && <p>{errors.username.message}</p>}
+    <div className="wrapper">
+      <div className="form-container">
+        <h2>Login to view card game</h2>
+        <p>
+          username: user <br /> password: password
+        </p>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <label htmlFor="username">
+            <b>Username</b>
+          </label>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            ref={register({ required: true })}
+          />
+          {errors.username && <p>{errors.username.message}</p>}
 
-        <label htmlFor="password">
-          <b>Password</b>
-        </label>
-        <input
-          type="password"
-          name="password"
-          placeholder="Enter password"
-          ref={register({ required: true })}
-        />
-        {errors.password && <p>{errors.password.message}</p>}
-        <button type="submit">Submit</button>
-        {loginError && <p>{loginError}</p>}
-      </form>
+          <label htmlFor="password">
+            <b>Password</b>
+          </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            ref={register({ required: true })}
+          />
+          {errors.password && <p>{errors.password.message}</p>}
+          <button type="submit">Submit</button>
+          {loginError && <p>{loginError}</p>}
+        </form>
+      </div>
     </div>
   );
 }
